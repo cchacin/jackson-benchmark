@@ -70,8 +70,8 @@ public class MyBenchmark {
     }
 
     @Benchmark
-    public void withSerializer() throws Exception {
-        writer.writeValueAsString(withSerializer);
+    public String withSerializer() throws Exception {
+        return writer.writeValueAsString(withSerializer);
     }
 
 }
